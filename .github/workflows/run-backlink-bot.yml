@@ -1,0 +1,48 @@
+name: Run NexusBot Autonomous Backlink Engine (Cloud Runner)
+
+on:
+  workflow_dispatch:
+    inputs:
+      money_site_url:
+        description: 'Money Site / Target URL to Backlink'
+        required: true
+        default: 'https://saifullahkhatri99-blip.github.io/backlink-indexer/'
+      seed_keyword:
+        description: 'Primary Seed Keyword for LSI Matrix'
+        required: true
+        default: 'free backlink indexing tool'
+      email:
+        description: 'Registration Email / Gmail'
+        required: false
+        default: 'nexus.seo.bot@gmail.com'
+
+jobs:
+  run-backlink-matrix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute Autonomous Backlink Engine
+        env:
+          MONEY_SITE: ${{ github.event.inputs.money_site_url }}
+          SEED_KEYWORD: ${{ github.event.inputs.seed_keyword }}
+        run: |
+          python nexus_bot.py
+
+      - name: Upload Generated Backlink Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-backlinks-report
+          path: verified_backlinks_report.json
