@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusLink Pro | Autonomous Backlink Generator & Form Automation Matrix</title>
+    <meta name="description" content="Next-Gen Autonomous Backlink Generator, Keyword Variation Matrix, Excel Target Importer, and Auto-Form Injector. MoneyRobot-Class SEO Engine.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Ambient Glow Effects -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <div class="brand-icon">
+                    <span class="pulse-ring"></span>
+                    🔗
+                </div>
+                <div class="brand-text">
+                    <h1>NEXUS<span>LINK</span> <span class="badge-tag">BOT MATRIX</span></h1>
+                    <p class="subtitle">Autonomous Multi-Platform Backlink Generator & Form Injector</p>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://saifullahkhatri99-blip.github.io/backlink-indexer/" target="_blank" class="suite-btn">
+                    ⚡ Open NexusIndex Pro
+                </a>
+                <a href="https://github.com/saifullahkhatri99-blip/backlink-generator" target="_blank" class="github-btn" id="repoLink">
+                    <svg height="18" viewBox="0 0 16 16" width="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    GitHub Repo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+        <!-- Top Stats Row -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon purple">🎯</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statKeywordCount">0</span>
+                    <span class="stat-title">Keyword Variations</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon cyan">🌐</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statTargetSites">0</span>
+                    <span class="stat-title">Target Sites Loaded</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">⚡</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statProfilesReady">0</span>
+                    <span class="stat-title">Backlink Payloads Ready</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon yellow">🤖</div>
+                <div class="stat-info">
+                    <span class="stat-value">Autonomous</span>
+                    <span class="stat-title">Form Mapping Engine</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Workspace (2-Column Grid) -->
+        <div class="workspace-grid">
+            
+            <!-- Left Column: Campaign Setup Matrix -->
+            <div class="card panel-campaign">
+                <div class="panel-header">
+                    <h2><span>01</span> Campaign & Target URL Setup</h2>
+                    <button class="tool-btn" id="btnLoadDemoCampaign">Load Demo Campaign</button>
+                </div>
+
+                <!-- Form Group: Target URL & Seed Keyword -->
+                <div class="form-grid-2">
+                    <div class="form-group">
+                        <label for="targetUrl">Target Website URL (Money Site / Tier 1):</label>
+                        <input type="url" id="targetUrl" placeholder="https://mywebsite.com/services" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="seedKeyword">Primary Seed Keyword:</label>
+                        <input type="text" id="seedKeyword" placeholder="e.g. seo indexing tool" required>
+                    </div>
+                </div>
+
+                <!-- Keyword Variation Engine -->
+                <div class="keyword-section">
+                    <div class="section-title-row">
+                        <h3><span>02</span> Smart LSI Keyword Variation Engine</h3>
+                        <div class="kw-actions">
+                            <button class="tool-btn" id="btnGenerateKw">⚡ Generate 50+ Variations</button>
+                            <button class="tool-btn" id="btnExtractKw">Extract Questions</button>
+                        </div>
+                    </div>
+                    <textarea id="keywordList" placeholder="Generated keyword variations will appear here (or enter your own custom keywords, one per line)..."></textarea>
+                    <div class="kw-footer">
+                        <span id="kwCountBadge">0 Keywords Ready</span>
+                        <span class="hint">Includes Exact Match, LSI Long-tail & Question Modifiers</span>
+                    </div>
+                </div>
+
+                <!-- Identity Vault (Gmail & Credentials) -->
+                <div class="identity-vault">
+                    <h3><span>03</span> Account Identity & Spintax Profile Vault</h3>
+                    <div class="form-grid-3">
+                        <div class="form-group">
+                            <label for="accountEmail">Account / Gmail Address:</label>
+                            <input type="email" id="accountEmail" placeholder="youraccount@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="accountUser">Profile Username Prefix:</label>
+                            <input type="text" id="accountUser" placeholder="e.g. alex_seo">
+                        </div>
+                        <div class="form-group">
+                            <label for="accountPass">Password:</label>
+                            <div class="pass-row">
+                                <input type="text" id="accountPass" value="NexusPass!2026#Secure">
+                                <button class="tool-btn" id="btnGenPass" title="Generate New Password">🎲</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spintax Bio Generator -->
+                    <div class="spintax-box">
+                        <div class="spintax-header">
+                            <label for="spintaxBio">Spintax Bio / Contextual Anchor Template:</label>
+                            <button class="tool-btn" id="btnGenSpintax">🎲 Re-Spin Bio</button>
+                        </div>
+                        <textarea id="spintaxBio">{Passionate|Experienced} digital explorer and {specialist|enthusiast}. Check out my verified work at {LINK}. {Always excited to connect|Looking forward to sharing valuable insights} with the community!</textarea>
+                    </div>
+                </div>
+
+                <!-- Target Excel / CSV Upload Section -->
+                <div class="excel-section">
+                    <h3><span>04</span> Target Websites Matrix (Excel / CSV Sheet)</h3>
+                    <div class="upload-dropzone" id="dropZone">
+                        <div class="drop-icon">📁</div>
+                        <div class="drop-text">
+                            <strong>Drag & Drop Excel / CSV Sheet</strong> or <span class="browse-link">browse files</span>
+                            <small>Supports columns: URL, Platform/CMS, Category, DA</small>
+                        </div>
+                        <input type="file" id="fileInput" accept=".csv, .xlsx, .xls, .txt">
+                    </div>
+
+                    <div class="preset-row">
+                        <span>Or Load Curated High-DA Target List:</span>
+                        <button class="tool-btn" id="btnLoadForums">💬 25+ High-DA Forums</button>
+                        <button class="tool-btn" id="btnLoadWeb2">📝 25+ Web 2.0 & Blogs</button>
+                        <button class="tool-btn" id="btnLoadDirectories">🏢 20+ High-DA Directories</button>
+                    </div>
+
+                    <textarea id="targetSitesInput" placeholder="Target websites list (one per line)...
+https://forum.xenforo.com
+https://discourse.tech.org
+https://myblog.wordpress.com
+https://community.phpbb.com"></textarea>
+                </div>
+
+                <!-- Action Button Matrix -->
+                <div class="campaign-actions">
+                    <button class="btn btn-primary" id="btnBuildCampaign">
+                        <span class="btn-glow"></span>
+                        <span class="btn-icon">🚀</span>
+                        BUILD BACKLINK PAYLOADS & MATRIX
+                    </button>
+                    <button class="btn btn-secondary" id="btnPushToIndexer" disabled>
+                        <span class="btn-icon">⚡</span>
+                        Push All Links to NexusIndex
+                    </button>
+                    <button class="btn btn-outline" id="btnExportPayloads" disabled>
+                        <span class="btn-icon">📥</span>
+                        Export Excel Sheet
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Auto Form Injector, Automation Console & Live Payloads -->
+            <div class="card panel-execution">
+                <div class="panel-header">
+                    <div class="terminal-title">
+                        <span class="term-dot red"></span>
+                        <span class="term-dot yellow"></span>
+                        <span class="term-dot green"></span>
+                        <h2>Autonomous Form Injector & Automation Hub</h2>
+                    </div>
+                    <button class="tool-btn" id="btnClearTerminal">Clear Logs</button>
+                </div>
+
+                <!-- 1-Click Auto-Fill Bookmarklet & Form Injector -->
+                <div class="bookmarklet-box">
+                    <div class="bookmarklet-header">
+                        <h4>⚡ 1-Click Universal Form-Fill Injector</h4>
+                        <span class="badge-mini">Chrome / Edge / Firefox</span>
+                    </div>
+                    <p class="bookmarklet-desc">
+                        Drag this button to your browser bookmarks bar. Open <strong>ANY</strong> forum, profile or submission page, click it, and it will <strong>automatically fill all fields, username, email, password, website, & contextual bio!</strong>
+                    </p>
+                    <div class="bookmarklet-drag-area">
+                        <a href="javascript:void(0)" class="bookmarklet-btn" id="autoFillBookmarklet" title="Drag me to your bookmarks bar!">
+                            ⚡ NexusLink Auto-Fill
+                        </a>
+                        <span class="drag-hint">&larr; Drag this button to your Bookmarks Bar</span>
+                    </div>
+                </div>
+
+                <!-- Live Automation Console -->
+                <div class="terminal-container">
+                    <div class="terminal-header-sub">
+                        <span>Live Execution Console & Payload Generator</span>
+                        <span id="liveStatusBadge">STANDBY</span>
+                    </div>
+                    <div class="terminal-body" id="terminalOutput">
+                        <div class="terminal-line system">
+                            <span class="timestamp">[00:00:00]</span>
+                            <span class="tag system">[SYSTEM]</span>
+                            <span class="msg">NexusLink Pro Engine Initialized. Ready for MoneyRobot-class campaign deployment.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generated Backlink Payloads Table / Matrix -->
+                <div class="payloads-section">
+                    <div class="payloads-header">
+                        <h3>Generated Backlink Payloads (<span id="payloadCount">0</span>)</h3>
+                        <div class="payload-tools">
+                            <button class="tool-btn" id="btnCopyAllLinks">Copy All Links</button>
+                        </div>
+                    </div>
+                    <div class="payload-table-wrapper">
+                        <table class="payload-table" id="payloadTable">
+                            <thead>
+                                <tr>
+                                    <th>Target Platform</th>
+                                    <th>CMS / Engine</th>
+                                    <th>Anchor Keyword</th>
+                                    <th>Backlink Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="payloadTableBody">
+                                <tr>
+                                    <td colspan="4" class="empty-table-cell">Configure campaign and click 'Build Backlink Payloads' to generate active targets.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="platform-templates.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
